@@ -1,0 +1,13 @@
+MARCADOR TENIS WEB 1.1 — PRIVACIDAD REFORZADA
+
+INCLUYE: marcador, 3 formatos (3/5 sets, super tie-break), jugadores, torneos, historial, exportación e importación JSON.
+
+SEGURIDAD: sin dependencias remotas, sin analíticas ni backend; CSP restrictiva (sin scripts externos, sin inline scripts), política no-referrer; caché offline limitada a archivos de la aplicación; validación y límite de 2 MB para importar copias JSON. No solicita permisos sensibles.
+
+INSTALACIÓN: los archivos deben alojarse en un origen HTTPS de confianza para la PWA en iPhone. En Safari abrir la URL -> Compartir -> Añadir a pantalla de inicio. Después de abrirla una vez con red y precargar la caché, probar en modo avión. No se ha publicado automáticamente en ningún servidor.
+
+PRUEBA LOCAL EN MAC: dentro de la carpeta: python3 -m http.server 8000; abrir http://localhost:8000.
+
+PRIVACIDAD Y LÍMITES: datos en localStorage, sin cifrado propio; el sistema operativo y Safari controlan su protección. Exportar copias con frecuencia. Los datos pueden perderse si se eliminan datos del sitio. HTTPS cifra la descarga pero el alojamiento puede actualizar el código al volver a conectarse. No hay garantía absoluta de seguridad. La versión web no importa los datos de la app SwiftUI automáticamente.
+
+NO BORRES la aplicación nativa anterior si necesitas conservar sus datos.
